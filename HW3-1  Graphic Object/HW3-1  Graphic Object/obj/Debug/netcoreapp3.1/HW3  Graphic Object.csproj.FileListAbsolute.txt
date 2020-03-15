@@ -1,0 +1,11 @@
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW3-1  Graphic Object\HW3-1  Graphic Object\obj\Debug\netcoreapp3.1\HW3  Graphic Object.AssemblyInfoInputs.cache
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW3-1  Graphic Object\HW3-1  Graphic Object\obj\Debug\netcoreapp3.1\HW3  Graphic Object.AssemblyInfo.cs
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW3-1  Graphic Object\HW3-1  Graphic Object\obj\Debug\netcoreapp3.1\HW3  Graphic Object.csprojAssemblyReference.cache
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW3-1  Graphic Object\HW3-1  Graphic Object\bin\Debug\netcoreapp3.1\HW3  Graphic Object.exe
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW3-1  Graphic Object\HW3-1  Graphic Object\bin\Debug\netcoreapp3.1\HW3  Graphic Object.deps.json
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW3-1  Graphic Object\HW3-1  Graphic Object\bin\Debug\netcoreapp3.1\HW3  Graphic Object.runtimeconfig.json
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW3-1  Graphic Object\HW3-1  Graphic Object\bin\Debug\netcoreapp3.1\HW3  Graphic Object.runtimeconfig.dev.json
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW3-1  Graphic Object\HW3-1  Graphic Object\bin\Debug\netcoreapp3.1\HW3  Graphic Object.dll
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW3-1  Graphic Object\HW3-1  Graphic Object\bin\Debug\netcoreapp3.1\HW3  Graphic Object.pdb
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW3-1  Graphic Object\HW3-1  Graphic Object\obj\Debug\netcoreapp3.1\HW3  Graphic Object.dll
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW3-1  Graphic Object\HW3-1  Graphic Object\obj\Debug\netcoreapp3.1\HW3  Graphic Object.pdb

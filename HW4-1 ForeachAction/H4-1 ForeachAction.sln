@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H4-1 ForeachAction", "H4-1 ForeachAction\H4-1 ForeachAction.csproj", "{267A3011-F12F-4877-BA8A-64EA43AE78E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{267A3011-F12F-4877-BA8A-64EA43AE78E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{267A3011-F12F-4877-BA8A-64EA43AE78E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{267A3011-F12F-4877-BA8A-64EA43AE78E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{267A3011-F12F-4877-BA8A-64EA43AE78E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7EE6E8E8-BBD4-4F8E-9218-BA64A5203DEF}
+	EndGlobalSection
+EndGlobal
