@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ArrayOfOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Order>
+    <ID>0</ID>
+    <Costumer>cjq</Costumer>
+    <OrderItemList>
+      <OrderItem>
+        <Name>《如何爱上上网课》</Name>
+        <UnitPrice>9999</UnitPrice>
+        <Quantity>1</Quantity>
+        <Total>0</Total>
+      </OrderItem>
+      <OrderItem>
+        <Name>《0基础入门C#》</Name>
+        <UnitPrice>99999</UnitPrice>
+        <Quantity>1</Quantity>
+        <Total>0</Total>
+      </OrderItem>
+      <OrderItem>
+        <Name>《我要回武汉》</Name>
+        <UnitPrice>10</UnitPrice>
+        <Quantity>1</Quantity>
+        <Total>0</Total>
+      </OrderItem>
+    </OrderItemList>
+  </Order>
+</ArrayOfOrder>
