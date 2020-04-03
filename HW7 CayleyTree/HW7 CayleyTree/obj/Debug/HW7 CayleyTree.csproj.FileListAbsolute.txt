@@ -1,0 +1,9 @@
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW7 CayleyTree\HW7 CayleyTree\bin\Debug\HW7 CayleyTree.exe.config
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW7 CayleyTree\HW7 CayleyTree\bin\Debug\HW7 CayleyTree.exe
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW7 CayleyTree\HW7 CayleyTree\bin\Debug\HW7 CayleyTree.pdb
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW7 CayleyTree\HW7 CayleyTree\obj\Debug\HW7 CayleyTree.csprojAssemblyReference.cache
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW7 CayleyTree\HW7 CayleyTree\obj\Debug\HW7_CayleyTree.Properties.Resources.resources
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW7 CayleyTree\HW7 CayleyTree\obj\Debug\HW7 CayleyTree.csproj.GenerateResource.cache
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW7 CayleyTree\HW7 CayleyTree\obj\Debug\HW7 CayleyTree.exe
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW7 CayleyTree\HW7 CayleyTree\obj\Debug\HW7 CayleyTree.pdb
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW7 CayleyTree\HW7 CayleyTree\obj\Debug\HW7_CayleyTree.CayTree.resources
