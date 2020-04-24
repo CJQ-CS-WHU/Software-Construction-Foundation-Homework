@@ -1,0 +1,435 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="never" />
+    <meta property="og:description" content="一、reflect.Typeof() 如果传入的是一个接口，如果是动态绑定了一个实现结构体的，则显示具体结构体的Type，否则是接口的名字。这个方法返回的是一个Type接口，其实就是返回了 绑定类型的" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>[go]反射 - Biningo - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/simplememory/bundle-simplememory.min.css?v=OL4qeo1LNGlN1rKIhv5UctANvt0M6Nx6kLzr_ffx3Xk" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/SimpleMemory/bundle-SimpleMemory-mobile.min.css" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/biningooginind/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/biningooginind/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/biningooginind/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 559704;
+        var currentBlogApp = 'biningooginind';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'SimpleMemory';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/biningooginind/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/biningooginind/">Biningo</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/biningooginind/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/Biningo">
+联系</a></li>
+<li>
+
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+23&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+10</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class = "postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/biningooginind/p/12769505.html">[go]反射</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                
+<div id="cnblogs_post_body" class="blogpost-body cnblogs-markdown">
+    <h2 id="一、reflecttypeof">一、reflect.Typeof()</h2>
+<p>如果传入的是一个接口，如果是动态绑定了一个实现结构体的，则显示具体结构体的Type，否则是接口的名字。这个方法返回的是一个Type接口，其实就是返回了  <strong>绑定类型的rtype，这个指针在Value这个结构体有</strong></p>
+<pre><code class="language-go">a:=A{}
+a.age=19
+a.name=&quot;PB&quot;
+i:=1
+log.Println(reflect.TypeOf(a).Name()) //类型的名字  A	
+log.Println(reflect.TypeOf(i).Name()) //int
+
+
+//底层基础类型
+log.Println(reflect.TypeOf(a).Kind(),reflect.TypeOf(i).Kind()) //struct int
+log.Println(reflect.TypeOf(a).Kind().String()==&quot;struct&quot;) //true  
+//返回的是Kind类型  需要通过string转化 否则是一个uint类型
+</code></pre>
+<p><strong>Typeof返回的是一个Type接口下面看看Type接口有哪些实现</strong></p>
+<pre><code class="language-go">type Student struct {
+	name string `pb:&quot;名字&quot;`
+	age  int    `json:&quot;年龄&quot;`
+}
+
+type Part1 struct {
+	a bool
+	b int32 //4 byte
+	c int8
+	d int64
+	e byte
+}
+type Part2 struct {
+	e byte
+	c int8
+	a bool
+	b int32
+	d int64
+}
+</code></pre>
+<p>利用反射可以查看结构体或其他类型的内存分配情况，如内存大小，字节对齐的大小等....</p>
+<p><a href="http://www.fly63.com/article/detial/7405"> http://www.fly63.com/article/detial/7405 </a></p>
+<h5 id="size（）：关于内存">Size（）：关于内存</h5>
+<blockquote>
+<p><strong>为什么要字节对齐？</strong></p>
+<p>加快访问速度，减少读取次数。如果不对齐，那么一个数据的地址可能会分散到用两个字节，那么CPU就可能需要分两次读取。</p>
+<p><img src="http://api.fly63.com/vue_blog/public/Uploads/20200204/5e38d28ca6976.jpg" alt="img"></p>
+<p>我们假设CPU以4字节为单位读取内存。</p>
+<p>如果变量在内存中的布局按4字节对齐，那么读取a变量只需要读取一次内存，即word1；读取b变量也只需要读取一次内存，即word2。</p>
+<p>而如果变量不做内存对齐，那么读取a变量也只需要读取一次内存，即word1；但是读取b变量时，由于b变量跨越了2个word，所以需要读取两次内存，分别读取word1和word2的值，然后将word1偏移取后3个字节，word2偏移取前1个字节，最后将它们做或操作，拼接得到b变量的值。</p>
+<p>显然，内存对齐在某些情况下可以减少读取内存的次数以及一些运算，性能更高。</p>
+<p>另外，由于内存对齐保证了读取b变量是单次操作，在多核环境下，原子性更容易保证。</p>
+<p>但是内存对齐提升性能的同时，也需要付出相应的代价。由于变量与变量之间增加了填充，并没有存储真实有效的数据，所以占用的内存会更大。这也是一个典型的空间换时间的应用场景。</p>
+<ul>
+<li>增加CPU吞吐量，减少读取次数</li>
+<li>保证原子操作</li>
+<li>空间换时间，如果没有安排好内存的话，中间会多出很多空白</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>part1</strong></p>
+<p><img src="https://pic4.zhimg.com/80/v2-6cdb7bc635868bf306ae86ef51c886ab_720w.jpg" alt="img"></p>
+<p><strong>part2</strong></p>
+<p><img src="https://pic1.zhimg.com/80/v2-0a764cc604c14e87676d444171931cdc_720w.jpg" alt="img"></p>
+</blockquote>
+<pre><code class="language-go">func main(){
+    s1 := Student{&quot;pb&quot;, 12}
+	type_s1 := reflect.TypeOf(s1) 
+	type_part1 := reflect.TypeOf(Part1{})
+	type_part2 := reflect.TypeOf(Part2{})
+    
+    //关于内存
+	log.Println(type_s1.Align(), type_part1.Align()) //8 8
+	log.Println(type_s1.FieldAlign(), type_part1.FieldAlign()) //8 8
+    
+	log.Println(type_part1.Size(), type_part2.Size()) //32 16 why?上图
+}
+</code></pre>
+<br>
+<hr>
+<h5 id="key--elem">Key()  Elem()</h5>
+<pre><code class="language-go">type MyMap map[int]string
+log.Println(reflect.TypeOf(MyMap{}).Key()) //返回map类型 key的类型 int
+log.Println(reflect.TypeOf(MyMap{}).Elem()) //返回 容器类型中元素的类型  string
+//It panics if the type's Kind is not Array, Chan, Map, Ptr, or Slice.
+
+</code></pre>
+<br>
+<hr>
+<h5 id="method--methodbyname">Method()  MethodByName()</h5>
+<p>反射方法。第一个传入0 1 2来表示方法 后面那个传入字符串</p>
+<h5 id="fieldbyxxxx">FieldByXXXX()</h5>
+<p>反射属性，<strong>Tag属性可以获得属性后面的注解调用Get方法</strong></p>
+<hr>
+<br>
+<br>
+<br>
+<h2 id="二、reflectvalueof">二、reflect.Valueof()</h2>
+<p>这是一个结构体，可以操作对象的值，每个方法都返回Value来达到链式调用的目的，</p>
+<p><strong>Type能实现的功能Value都可以</strong></p>
+<pre><code class="language-go">type Value struct {
+	typ *rtype //Typeof返回的东西  继承了Type接口 保存了一个数据的类型和底层指针
+	ptr unsafe.Pointer
+	flag
+}
+
+type rtype struct {
+	size       uintptr
+	ptrdata    uintptr  // number of bytes in the type that can contain pointers
+	hash       uint32   // hash of type; avoids computation in hash tables
+	tflag      tflag    // extra type information flags
+	align      uint8    // alignment of variable with this type
+	fieldAlign uint8    // alignment of struct field with this type
+	kind       uint8    // enumeration for C
+	alg        *typeAlg // algorithm table
+	gcdata     *byte    // garbage collection data
+	str        nameOff  // string form
+	ptrToThis  typeOff  // type for pointer to this type, may be zero
+}
+</code></pre>
+<h5 id="method">Method()</h5>
+<pre><code class="language-go">type Stu struct {
+	name string &quot;名字&quot;
+	age  int    &quot;年龄&quot;
+}
+
+func (s *Stu) Say()  {
+	fmt.Println(s.name)
+}
+
+func (s Stu) Hello()  {
+	fmt.Println(s.name)
+}
+func (s Stu) Hello2(ss string,i int)  {
+	fmt.Println(ss,i)
+}
+</code></pre>
+<pre><code class="language-go">s := Stu{&quot;pb&quot;, 12}
+v := reflect.ValueOf(s)
+
+fmt.Println(v,v.Field(0))
+fmt.Println(v.Kind(), v.Type().Name())
+fmt.Println(v.FieldByName(&quot;name&quot;), v.Field(0))
+
+	//操作方法  方法位置按照函数名字进行字典序排序
+v.Method(0).Call(nil)                              //#调用无参函数
+v.Method(1).Call([]reflect.Value{reflect.ValueOf(&quot;OK&quot;), reflect.ValueOf(1)}) //#调用有参函数 必须是Value类型
+</code></pre>
+<br>
+<hr>
+<h5 id="elem">Elem()</h5>
+<p><strong>要修改对象的值，必须指针的Value调用Elem方法才可以修改</strong></p>
+<p>只能<strong>指针</strong>的Value（包括动态绑定的接口，如果这个接口的值是指针类型也可）才可以调用并且修改原来对象的值</p>
+<pre><code class="language-go">s = Stu{Name:&quot;biningo&quot;,age:18}
+sv:=reflect.ValueOf(s)
+log.Println(sv.Field(0))
+
+pv:=reflect.ValueOf(&amp;s)
+
+//// It panics if v's Kind is not Interface or Ptr.
+//log.Println(reflect.ValueOf(s).Elem().CanSet())  
+log.Println(pv.Elem().Field(0),pv.Elem().Field(0).CanSet()) //biningo true
+pv.Elem().Field(0).SetString(&quot;BININGO&quot;) 
+log.Println(pv.Elem().Field(1).CanSet()) //false 必须要大写的字段才可以设置
+
+log.Println(s) //BININGO 18
+
+
+//对于没有接口的类型来说 返回的就是一个指针
+i:=pv.Interface() //返回空接口
+//Valueof返回的是实际动态绑定的类型 这里是*Stu
+log.Println(reflect.ValueOf(i).Elem().CanSet()) //true  如果不加Elem则false
+</code></pre>
+<br>
+<hr>
+<br>
+<br>
+<br>
+<h2 id="三、value和type相互转换">三、Value和Type相互转换</h2>
+<p>Type和Value可以相互转化</p>
+<p><strong>通过Type来创建一个Value</strong></p>
+<pre><code class="language-go">t:=sv.Type() //Value-&gt;Type
+log.Println(t.Name()) //Stu
+
+//Type创建Value
+s2:=reflect.New(t)
+log.Println(s2.Type(),s2.Elem().CanSet(),s2) //true因为返回的是*Stu 都是默认值
+s2.Elem().Field(0).SetString(&quot;Biningo2&quot;)
+//s2.Elem().Field(1).SetInt(19) 私有字段不可设置
+log.Println(s2)
+
+</code></pre>
+<p><strong>Value可以直接转化为Type</strong></p>
+<pre><code class="language-go">调用Value的Type方法即可
+
+</code></pre>
+<p><strong>Value转化为具体对象</strong></p>
+<p>Value--&gt;Interface--&gt;Obj</p>
+<pre><code class="language-go">//Value转化为具体对象
+//Value--&gt;Interface--&gt;Obj
+inter:=sv.Interface() //*Stu
+s1:=inter.(Stu)
+log.Println(s1) // biningo 18
+
+</code></pre>
+
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2020-04-24 19:12</span>&nbsp;
+<a href="https://www.cnblogs.com/biningooginind/">Biningo</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12769505" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12769505);return false;">收藏</a></div>
+        </div>
+	    
+	    
+    </div><!--end: topics 文章、评论容器-->
+</div>
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 559704, cb_blogApp = 'biningooginind', cb_blogUserGuid = '668ccb89-9f21-4682-8e6d-08d765b2412c';
+    var cb_entryId = 12769505, cb_entryCreatedDate = '2020-04-24 19:12', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 Biningo
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>
