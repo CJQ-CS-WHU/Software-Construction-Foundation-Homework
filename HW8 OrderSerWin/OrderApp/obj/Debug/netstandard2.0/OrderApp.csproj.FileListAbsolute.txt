@@ -1,0 +1,8 @@
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\OrderApp\bin\Debug\netstandard2.0\OrderApp.deps.json
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\OrderApp\bin\Debug\netstandard2.0\OrderApp.dll
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\OrderApp\bin\Debug\netstandard2.0\OrderApp.pdb
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\OrderApp\obj\Debug\netstandard2.0\OrderApp.AssemblyInfoInputs.cache
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\OrderApp\obj\Debug\netstandard2.0\OrderApp.AssemblyInfo.cs
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\OrderApp\obj\Debug\netstandard2.0\OrderApp.dll
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\OrderApp\obj\Debug\netstandard2.0\OrderApp.pdb
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\OrderApp\obj\Debug\netstandard2.0\OrderApp.csprojAssemblyReference.cache

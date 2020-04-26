@@ -1,0 +1,8 @@
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\ModifyOrderWin\bin\Debug\ModifyOrderWin.exe.config
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\ModifyOrderWin\bin\Debug\ModifyOrderWin.exe
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\ModifyOrderWin\bin\Debug\ModifyOrderWin.pdb
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\ModifyOrderWin\obj\Debug\ModifyOrderWin.Properties.Resources.resources
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\ModifyOrderWin\obj\Debug\ModifyOrderWin.csproj.GenerateResource.cache
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\ModifyOrderWin\obj\Debug\ModifyOrderWin.exe
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\ModifyOrderWin\obj\Debug\ModifyOrderWin.pdb
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\ModifyOrderWin\obj\Debug\ModifyOrderWin.csprojAssemblyReference.cache

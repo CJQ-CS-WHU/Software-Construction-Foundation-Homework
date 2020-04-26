@@ -1,0 +1,12 @@
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\CreateOrderWin\bin\Debug\CAWin.exe.config
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\CreateOrderWin\bin\Debug\CAWin.exe
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\CreateOrderWin\bin\Debug\CAWin.pdb
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\CreateOrderWin\bin\Debug\OrderApp.dll
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\CreateOrderWin\bin\Debug\OrderApp.pdb
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\CreateOrderWin\obj\Debug\CAWin.csprojAssemblyReference.cache
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\CreateOrderWin\obj\Debug\CreateOrderWin.CreateOrderWin.resources
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\CreateOrderWin\obj\Debug\CreateOrderWin.Properties.Resources.resources
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\CreateOrderWin\obj\Debug\CAWin.csproj.GenerateResource.cache
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\CreateOrderWin\obj\Debug\CAWin.csproj.CopyComplete
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\CreateOrderWin\obj\Debug\CAWin.exe
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\CreateOrderWin\obj\Debug\CAWin.pdb

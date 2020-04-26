@@ -1,0 +1,13 @@
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\OrderAppWin\bin\Debug\OrderAppWin.exe.config
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\OrderAppWin\bin\Debug\OrderAppWin.exe
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\OrderAppWin\bin\Debug\OrderAppWin.pdb
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\OrderAppWin\bin\Debug\OrderApp.pdb
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\OrderAppWin\obj\Debug\OrderAppWin.csprojAssemblyReference.cache
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\OrderAppWin\obj\Debug\OrderAppWin.OS.resources
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\OrderAppWin\obj\Debug\OrderAppWin.Properties.Resources.resources
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\OrderAppWin\obj\Debug\OrderAppWin.csproj.GenerateResource.cache
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\OrderAppWin\obj\Debug\OrderAppWin.csproj.CopyComplete
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\OrderAppWin\obj\Debug\OrderAppWin.exe
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\OrderAppWin\obj\Debug\OrderAppWin.pdb
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\OrderAppWin\bin\Debug\OrderApp.dll
+E:\Desktop\补课\软件构造基础\Homework6-参考代码\OrderAppWin\obj\Debug\OrderAppWin.CreateOrderWin.resources
