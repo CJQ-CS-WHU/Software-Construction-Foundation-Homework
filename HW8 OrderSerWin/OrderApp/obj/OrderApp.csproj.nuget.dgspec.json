@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Desktop\\补课\\软件构造基础\\Homework6-参考代码\\OrderApp\\OrderApp.csproj": {}
+    "E:\\Desktop\\2020课程学习\\软件构造基础\\Software-Construction-Foundation-Homework\\HW8 OrderSerWin\\OrderApp\\OrderApp.csproj": {}
   },
   "projects": {
-    "E:\\Desktop\\补课\\软件构造基础\\Homework6-参考代码\\OrderApp\\OrderApp.csproj": {
+    "E:\\Desktop\\2020课程学习\\软件构造基础\\Software-Construction-Foundation-Homework\\HW8 OrderSerWin\\OrderApp\\OrderApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Desktop\\补课\\软件构造基础\\Homework6-参考代码\\OrderApp\\OrderApp.csproj",
+        "projectUniqueName": "E:\\Desktop\\2020课程学习\\软件构造基础\\Software-Construction-Foundation-Homework\\HW8 OrderSerWin\\OrderApp\\OrderApp.csproj",
         "projectName": "OrderApp",
-        "projectPath": "E:\\Desktop\\补课\\软件构造基础\\Homework6-参考代码\\OrderApp\\OrderApp.csproj",
+        "projectPath": "E:\\Desktop\\2020课程学习\\软件构造基础\\Software-Construction-Foundation-Homework\\HW8 OrderSerWin\\OrderApp\\OrderApp.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Desktop\\补课\\软件构造基础\\Homework6-参考代码\\OrderApp\\obj\\",
+        "outputPath": "E:\\Desktop\\2020课程学习\\软件构造基础\\Software-Construction-Foundation-Homework\\HW8 OrderSerWin\\OrderApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
