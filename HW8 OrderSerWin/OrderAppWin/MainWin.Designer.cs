@@ -147,7 +147,7 @@ namespace OrderAppWin
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76.74858F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 189F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 139F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 151F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 2, 0);
@@ -163,6 +163,7 @@ namespace OrderAppWin
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.44828F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(967, 101);
             this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // label1
             // 
@@ -189,7 +190,7 @@ namespace OrderAppWin
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(491, 0);
+            this.label2.Location = new System.Drawing.Point(490, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 24);
             this.label2.TabIndex = 4;
@@ -197,7 +198,7 @@ namespace OrderAppWin
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(819, 3);
+            this.button2.Location = new System.Drawing.Point(818, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 40);
             this.button2.TabIndex = 5;
@@ -207,14 +208,14 @@ namespace OrderAppWin
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(680, 3);
+            this.textBox1.Location = new System.Drawing.Point(679, 3);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(120, 35);
             this.textBox1.TabIndex = 8;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(680, 50);
+            this.button4.Location = new System.Drawing.Point(679, 50);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(100, 40);
             this.button4.TabIndex = 7;
@@ -224,7 +225,7 @@ namespace OrderAppWin
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(819, 50);
+            this.button3.Location = new System.Drawing.Point(818, 50);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 40);
             this.button3.TabIndex = 6;

@@ -17,3 +17,12 @@ E:\Documents\Tencent Files\1525468122\FileRecv\SimpleCrawler\CrawlerForm\obj\Deb
 E:\Documents\Tencent Files\1525468122\FileRecv\SimpleCrawler\CrawlerForm\obj\Debug\CrawlerForm.csproj.GenerateResource.cache
 E:\Documents\Tencent Files\1525468122\FileRecv\SimpleCrawler\CrawlerForm\obj\Debug\CrawlerForm.exe
 E:\Documents\Tencent Files\1525468122\FileRecv\SimpleCrawler\CrawlerForm\obj\Debug\CrawlerForm.pdb
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW10 SimpleCrawler\CrawlerForm\bin\Debug\CrawlerForm.exe.config
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW10 SimpleCrawler\CrawlerForm\bin\Debug\CrawlerForm.exe
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW10 SimpleCrawler\CrawlerForm\bin\Debug\CrawlerForm.pdb
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW10 SimpleCrawler\CrawlerForm\obj\Debug\CrawlerForm.csprojAssemblyReference.cache
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW10 SimpleCrawler\CrawlerForm\obj\Debug\CrawlerForm.Form1.resources
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW10 SimpleCrawler\CrawlerForm\obj\Debug\CrawlerForm.Properties.Resources.resources
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW10 SimpleCrawler\CrawlerForm\obj\Debug\CrawlerForm.csproj.GenerateResource.cache
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW10 SimpleCrawler\CrawlerForm\obj\Debug\CrawlerForm.exe
+E:\Desktop\2020课程学习\软件构造基础\Software-Construction-Foundation-Homework\HW10 SimpleCrawler\CrawlerForm\obj\Debug\CrawlerForm.pdb
